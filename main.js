@@ -244,7 +244,7 @@ document.getElementsByName('sort-price').forEach(input => {
     }
   }
 
-  document.getElementsByName('search').forEach(input=>{
+  document.getElementById('searchBtn').forEach(input=>{
     input.addEventListener('change', filterAccordingToSearch)
   })
   function filterAccordingToSearch(){
