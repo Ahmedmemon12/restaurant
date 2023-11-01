@@ -267,7 +267,7 @@ const products = [
   function filterByPriceRange () {
     console.log(this.value)
     const filtered = products.filter(data => data.price >= this.value)
-    displayProducts(filtered  )
+    displayProducts(filtered)
   }
   
   function displayProducts (prod) {
