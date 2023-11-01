@@ -24,10 +24,8 @@
                 <a class="nav-link" href="#">Products</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-warning"  id="searchBtn">Search</button>
-            </form>
+              <input class="form-control me-2" type="search" name="search" placeholder="Search" id="search_input" aria-label="Search">
+              <button class="btn btn-outline-warning" type="submit" id="sbtn">Search</button>
           </div>
         </div>
       </nav>
@@ -72,6 +70,8 @@
               <input value="dessert" type="radio" name="sort-catogery">
               <span>Dessert</span>
             </label>
+
+            <input type="range" name="sort-range" id="range-input" max="10">
           </form>
         </div>
       </div>

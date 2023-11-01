@@ -32,6 +32,10 @@
     font-size: 18px;
 }
 
+#search_input{
+  width: 25%;
+}
+
 .shadow__btn {
     padding: 10px 20px;
     border: none;
@@ -215,6 +219,40 @@ hr {
   border: 2px dotted gold !important;
 
 }
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  background: gold;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: rgb(255, 231, 94);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: gold;
+}
+
+/* You can adjust the colors and sizes to match your theme. */
+
+
+
+
+
 
 
 

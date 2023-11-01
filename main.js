@@ -244,12 +244,26 @@ document.getElementsByName('sort-price').forEach(input => {
     }
   }
 
-  document.getElementById('searchBtn').forEach(input=>{
-    input.addEventListener('change', filterAccordingToSearch)
-  })
+  document
+  .getElementById('range-input')
+  .addEventListener('change', filterByPriceRange)
+
+  document
+  .getElementById('sbtn').addEventListener('click', filterAccordingToSearch)
   function filterAccordingToSearch(){
-    const FATS = fooditems.filter((data)=>data.title.toLocaleLowerCase().includes(this.value))
+    const input = document.getElementById('search_input').value
+    console.log('input->' , input)
+      const FATS = fooditems.filter((data)=>data.title.toLowerCase().includes(input.toLowerCase(input)))
+    console.log('FATS->' , FATS)
+
     displayProducts(FATS)
+  }
+
+
+  function filterByPriceRange () {
+    console.log(this.value)
+    const filtered = fooditems.filter(data => data.price >= this.value)
+    displayProducts(filtered)
   }
 
   function displayProducts (prod) {
